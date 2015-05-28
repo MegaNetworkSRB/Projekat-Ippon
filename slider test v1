@@ -1,7 +1,7 @@
 Public Class Form1
     Dim kretnja As New Integer
     Dim brojac As New Integer
-        
+             
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         kretnja = 1
         While (kretnja = 1)
@@ -22,7 +22,6 @@ Public Class Form1
         While (kretnja = 1)
             brojac = brojac + 1
             Panel1.Location = New Point(Panel1.Location.X, Panel1.Location.Y + 1)
-
             Panel2.Location = New Point(Panel2.Location.X, Panel2.Location.Y + 1)
             Panel3.Location = New Point(Panel3.Location.X, Panel3.Location.Y + 1)
             Panel4.Location = New Point(Panel4.Location.X, Panel4.Location.Y + 1)
@@ -45,3 +44,6 @@ Public Class Form1
 
     End Sub
 End Class
+
+
+Jovan
