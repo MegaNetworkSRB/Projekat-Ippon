@@ -1,0 +1,47 @@
+Public Class Form1
+    Dim kretnja As New Integer
+    Dim brojac As New Integer
+        
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        kretnja = 1
+        While (kretnja = 1)
+            brojac = brojac - 1
+            Panel1.Location = New Point(Panel1.Location.X, Panel1.Location.Y - 1)
+            Panel2.Location = New Point(Panel2.Location.X, Panel2.Location.Y - 1)
+            Panel3.Location = New Point(Panel3.Location.X, Panel3.Location.Y - 1)
+            Panel4.Location = New Point(Panel4.Location.X, Panel4.Location.Y - 1)
+            If (brojac = -91) Then
+                brojac = 0
+                kretnja = 0
+            End If
+        End While
+    End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        kretnja = 1
+        While (kretnja = 1)
+            brojac = brojac + 1
+            Panel1.Location = New Point(Panel1.Location.X, Panel1.Location.Y + 1)
+
+            Panel2.Location = New Point(Panel2.Location.X, Panel2.Location.Y + 1)
+            Panel3.Location = New Point(Panel3.Location.X, Panel3.Location.Y + 1)
+            Panel4.Location = New Point(Panel4.Location.X, Panel4.Location.Y + 1)
+        If (brojac = 91) Then
+            brojac = 0
+            kretnja = 0
+        End If
+        End While
+    End Sub
+
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Sleep(ByVal p1 As Integer)
+        Throw New NotImplementedException
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+
+    End Sub
+End Class
